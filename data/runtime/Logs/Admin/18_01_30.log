@@ -1,0 +1,74 @@
+[ 2018-01-30T12:55:54+08:00 ] 127.0.0.1 /index.php/Admin/BasicConfig/site_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000678s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000907s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_options` [ RunTime:0.0118s ]
+NOTIC: [8] Undefined index: F_MCHID D:\phpStudy\PHPTutorial\WWW\test\application\Admin\Controller\BasicConfigController.class.php 第 40 行.
+NOTIC: [8] Undefined index: F_KEY D:\phpStudy\PHPTutorial\WWW\test\application\Admin\Controller\BasicConfigController.class.php 第 41 行.
+SQL: SELECT * FROM `hb_options` WHERE ( option_name='customer_options' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: UPDATE `hb_options` SET `option_id`='12',`option_name`='customer_options',`option_value`='{\"site_name\":\"\\u5305\\u4f60\\u8bf4\\u5fae\\u4fe1\\u53e3\\u4ee4\\u7ea2\\u5305\\u5c0f\\u7a0b\\u5e8f\",\"site_icp\":\"\\u5b8c\\u7f8e\\u8fd0\\u8425\\u7248\\uff0c\\u4fee\\u590d\\u6240\\u6709BUG\",\"site_tongji\":\"\\u4e13\\u4e1a\\u63d0\\u4f9b\\u5404\\u79cd\\u7cbe\\u54c1\\u5546\\u4e1a\\u6e90\\u7801\\u3001\\u6a21\\u677f\\u3001\\u89c6\\u9891\\uff0c\\u8054\\u7cfbQQ\\uff1a993424780\",\"site_copyright\":\"\\u4e13\\u4e1a\\u63d0\\u4f9b\\u5404\\u79cd\\u7cbe\\u54c1\\u5546\\u4e1a\\u6e90\\u7801\\u3001\\u6a21\\u677f\\u3001\\u89c6\\u9891\\uff0c\\u8054\\u7cfbQQ\\uff1a993424780\",\"G_APPID\":\"wx36789ca432282fea\",\"G_APPSECRET\":\"c896a5671a961b62db5e3a94f9331f7e\",\"G_MCHID\":\"14898976462\",\"G_KEY\":\"70bea561c52855a875dde5f21afc1b16\",\"C_APPID\":\"wx9ed5ee17801dd3d4\",\"C_APPSECRET\":\"a24cb1867ca56235d4b8741dc277fba6\",\"C_JUMP\":\"pages\\/index\\/index\",\"new_tpl\":\"news_tpl_send : maCtOP96wLIi9ynCnHJ17DgcnQcvmHw9-v1WlkM9yHg,\\nnews_tpl_finish : 044zEgNwSPRBG_sL2Hy44QPH91kFH3R8lKoQIAUA1Gg,\\nnews_tpl_refund: XitxWZCwM29DZm87K1Ivw2r4-AIa8H2A-NbiF0qWwvQ\",\"commision\":\"1\",\"advcommision\":\"3\",\"amount_min\":\"0.01\",\"receive_amount_min\":\"0.01\",\"min_withdrawals\":\"1\",\"max_withdrawal_time\":\"1000000\",\"title\":\"\\u8d44\\u6e90\\u90a6\",\"description\":\"QQ\\uff1a993424780\",\"url\":\"http:\\/\\/www.wazyb.com\\/\"}' WHERE ( option_name='customer_options' ) [ RunTime:0.0008s ]
+
+[ 2018-01-30T12:56:53+08:00 ] 127.0.0.1 /index.php/Admin/Rbac/authorize/id/6
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2018-01-30T12:57:09+08:00 ] 127.0.0.1 /index.php/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2018-01-30T12:58:00+08:00 ] 127.0.0.1 /index.php/admin/menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2018-01-30T13:05:06+08:00 ] 127.0.0.1 /index.php/Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001471s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003542s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001722s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001746s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `hb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-01-30T13:05:12+08:00 ] 127.0.0.1 /index.php/Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000788s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000877s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `hb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0012s ]
+
+[ 2018-01-30T13:05:21+08:00 ] 127.0.0.1 /index.php/Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001468s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003323s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.001825s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.001864s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `hb_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hb_role_user` [ RunTime:0.0112s ]
+SQL: SELECT `role_id` FROM hb_role_user a INNER JOIN hb_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0009s ]
+SQL: UPDATE `hb_users` SET `user_login`='admin',`user_pass`='###df15ab88b7c5bb2089ba060502b12830',`user_nicename`='资源邦(www.wazyb.com)',`user_email`='',`user_url`='http://www.wazyb.com/',`avatar`=NULL,`sex`='1',`birthday`='1996-06-22',`signature`='资源邦，一个有态度的源码、模板、视频和教程资源分享平台!',`last_login_ip`='127.0.0.1',`last_login_time`='2018-01-30 13:05:21',`create_time`='2000-01-01 00:00:00',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0010s ]
+
+[ 2018-01-30T13:11:49+08:00 ] 127.0.0.1 /index.php/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2018-01-30T13:11:54+08:00 ] 127.0.0.1 /index.php/Admin/Rbac/authorize/id/6
+NOTIC: D方法实例化没找到模型类Common\Model\AuthAccessModel
+
+[ 2018-01-30T13:12:22+08:00 ] 127.0.0.1 /index.php/Admin/Menu/index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+

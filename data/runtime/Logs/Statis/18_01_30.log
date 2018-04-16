@@ -1,0 +1,90 @@
+[ 2018-01-30T12:56:23+08:00 ] 127.0.0.1 /index.php/Statis/User/get_usersummary
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000650s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000246s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000860s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8192] Non-static method Common\Controller\WeixinController::instance() should not be called statically D:\phpStudy\PHPTutorial\WWW\test\application\Statis\Controller\UserController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pt D:\phpStudy\PHPTutorial\WWW\test\application\Common\Common\function.php 第 2228 行.
+NOTIC: [8] Undefined index: is_post D:\phpStudy\PHPTutorial\WWW\test\application\Common\Common\function.php 第 2237 行.
+NOTIC: [8] Undefined index: expires_in D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\WeixinController.class.php 第 96 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-30T12:56:28+08:00 ] 127.0.0.1 /index.php/Statis/User/envelop_user
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000561s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000523s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_wx_user` [ RunTime:0.0147s ]
+SQL: SHOW COLUMNS FROM `hb_enve` [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `hb_enve_receive` [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_wx_user` WHERE ( add_time > 1516636800 and add_time <= 1517241540 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve_receive` WHERE ( add_time > 1516636800 and add_time <= 1517241540 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve` WHERE ( add_time > 1516636800 and add_time <= 1517241540 and pay_status = "ok" ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve` WHERE ( add_time > 1516636800 and add_time <= 1517241540 and pay_status != "ok" ) LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-30T13:11:13+08:00 ] 127.0.0.1 /index.php/Statis/Money/get_sum
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000495s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000193s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000510s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `hb_enve` [ RunTime:0.0081s ]
+SQL: SELECT SUM(show_amount) AS tp_Sum FROM `hb_enve` WHERE ( add_time > 1517155200 and add_time <= 1517241540 and pay_status = "ok" ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT SUM(show_amount) AS tp_Sum FROM `hb_enve` WHERE ( add_time > 1517155200 and add_time <= 1517241540 and pay_status != "ok" ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-30T13:11:18+08:00 ] 127.0.0.1 /index.php/Statis/User/get_usersummary
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000721s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001996s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000938s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0081s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8192] Non-static method Common\Controller\WeixinController::instance() should not be called statically D:\phpStudy\PHPTutorial\WWW\test\application\Statis\Controller\UserController.class.php 第 31 行.
+NOTIC: [8] Undefined index: pt D:\phpStudy\PHPTutorial\WWW\test\application\Common\Common\function.php 第 2228 行.
+NOTIC: [8] Undefined index: is_post D:\phpStudy\PHPTutorial\WWW\test\application\Common\Common\function.php 第 2237 行.
+NOTIC: [8] Undefined index: expires_in D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\WeixinController.class.php 第 96 行.
+NOTIC: [8] Undefined index: url D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\AppframeController.class.php 第 22 行.
+
+[ 2018-01-30T13:11:21+08:00 ] 127.0.0.1 /index.php/Statis/User/envelop_user
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000420s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001468s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000705s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `hb_users` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `hb_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `hb_wx_user` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `hb_enve` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `hb_enve_receive` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_wx_user` WHERE ( add_time > 1516636800 and add_time <= 1517241540 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve_receive` WHERE ( add_time > 1516636800 and add_time <= 1517241540 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve` WHERE ( add_time > 1516636800 and add_time <= 1517241540 and pay_status = "ok" ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hb_enve` WHERE ( add_time > 1516636800 and add_time <= 1517241540 and pay_status != "ok" ) LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: url D:\phpStudy\PHPTutorial\WWW\test\application\Common\Controller\AppframeController.class.php 第 22 行.
+
